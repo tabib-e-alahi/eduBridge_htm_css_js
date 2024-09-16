@@ -1,9 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- =============== noto font links ====================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ================== css styles ======================== -->
+    <link rel="stylesheet" href="./styles/navbar.css" />
     <!-- ============ daisyui links ======================= -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
@@ -16,7 +25,63 @@
   <body>
     <!-- ================= == Header Section ========================= -->
     <header>
-      <h1 class="text-4xl text-center">this is tabib</h1>
+      <!-- =================Navbar section=================== -->
+      <nav class="bg-base-100 fixed w-full z-10 px-4 py-1 border-b">
+        <div class="navbar">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Home</a></li>
+                <li><a>Courses</a></li>
+                <li><a>Teach on EduBridge</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <img class="w-44 h-16" src="./assets/new_logo.png" alt="logo" />
+          </div>
+
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 noto-sans-font text-[15px] navOptions">
+              <li><a>Home</a></li>
+              <li><a>Courses</a></li>
+              <li><a>Teach on EduBridge</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="navbar-end gap-6">
+            <button
+              class="flex-none text-lg border-2 border-[#0097b2] px-3.5 py-2 rounded-sm font-bold text-[#0097b2] shadow-sm hover:bg-[#0097b2] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0097b2]"
+            >
+              Log In
+            </button>
+            <button
+              class="flex-none text-lg bg-[#0097b2] px-3.5 py-2.5 font-semibold text-white shadow-sm hover:bg-[#2c6874] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0097b2]"
+            >
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </nav>
     </header>
     <!-- ================= main body section ============================ -->
     <main></main>
