@@ -1,5 +1,26 @@
 {
-    "tailwindCSS.emmetCompletions": true,
-    "tailwindCSS.colorDecorators": true,
-    "tailwindCSS.codeActions": true
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.colorDecorators": true,
+  "tailwindCSS.codeActions": true,
+  "tailwindCSS.files.exclude": [
+    "**/.git/**",
+    "**/node_modules/**",
+    "**/.hg/**",
+    "**/.svn/**",
+    "tailwind.config.{js,cjs,mjs,ts,cts,mts}"
+  ],
+  "tailwindCSS.classAttributes": [
+    "class",
+    "className",
+    "ngClass",
+    "class:list",
+    "colorDecorators"
+  ],
+  "tailwindCSS.experimental.configFile": null,
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "tailwindCSS.includeLanguages": {
+      "plaintext": "html"
+    }
 }
