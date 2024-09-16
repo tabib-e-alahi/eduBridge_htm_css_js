@@ -1,0 +1,5 @@
+{
+    "tailwindCSS.emmetCompletions": true,
+    "tailwindCSS.colorDecorators": true,
+    "tailwindCSS.codeActions": true
+}

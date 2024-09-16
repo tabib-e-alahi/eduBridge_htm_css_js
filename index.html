@@ -13,6 +13,7 @@
     />
     <!-- ================== css styles ======================== -->
     <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/banner.css" />
     <!-- ============ daisyui links ======================= -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
@@ -21,12 +22,17 @@
     />
     <!-- =========== tailwincss script file ============ -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ================= animate.css cdn ================ -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <!-- ================= == Header Section ========================= -->
     <header>
       <!-- =================Navbar section=================== -->
-      <nav class="bg-base-100 fixed w-full z-10 px-4 py-1 border-b">
+      <nav class="fixed w-full z-10 px-4 py-1  bg-opacity-40">
         <div class="navbar">
           <div class="navbar-start">
             <div class="dropdown">
@@ -59,8 +65,10 @@
             <img class="w-44 h-16" src="./assets/new_logo.png" alt="logo" />
           </div>
 
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1 noto-sans-font text-[15px] navOptions">
+          <div class="navbar-center hidden lg:flex ">
+            <ul
+              class="menu menu-horizontal px-1 noto-sans-font text-[15px] navOptions"
+            >
               <li><a>Home</a></li>
               <li><a>Courses</a></li>
               <li><a>Teach on EduBridge</a></li>
@@ -70,18 +78,66 @@
 
           <div class="navbar-end gap-6">
             <button
-              class="flex-none text-lg border-2 border-[#0097b2] px-3.5 py-2 rounded-sm font-bold text-[#0097b2] shadow-sm hover:bg-[#0097b2] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0097b2]"
+              class="flex-none rounded-sm border-2  border-indigo-500 px-6 py-2  font-semibold text-indigo-600 shadow-sm hover:bg-indigo-500 hover:text-white"
             >
               Log In
             </button>
             <button
-              class="flex-none text-lg bg-[#0097b2] px-3.5 py-2.5 font-semibold text-white shadow-sm hover:bg-[#2c6874] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0097b2]"
+              class="flex-none rounded-sm bg-indigo-500 px-6 py-2.5  font-semibold text-white shadow-sm hover:bg-indigo-400 "
             >
               Sign Up
             </button>
           </div>
         </div>
       </nav>
+
+      <!-- ================== Banner section =========================== -->
+      <section
+        class="pt-20 h-fit bg-opacity-40 gradient-background banner-bg-img"
+      >
+        <div class="max-w-7xl mx-auto">
+          <section class="lg:h-fit rounded-md w-11/12 mx-auto">
+            <div class="grid py-8 lg:grid-cols-2 lg:pt-4">
+              <div class="mr-auto place-self-center justify-center w-11/12">
+                <h1
+                  class="animate__animated animate__fadeInLeft animate__slow max-w-2xl mb-4 roboto-mono-font font-bold leading-none tracking-tight md:text-5xl line_class dark:text-black"
+                >
+                  Experience <br />
+                  Personalized
+                  <br />
+                  learning with our <br />
+                  private course.
+                </h1>
+                <p
+                  class="animate__animated animate__fadeInRight animate__slow max-w-2xl mb-6 font-semibold text-gray-500 lg:mb-8 dark:text-gray-600"
+                >
+                  Discover tailored education with our private course, offering
+                  a personalized learning experience that caters to your unique
+                  needs and goals. .
+                </p>
+                <div
+                  class="animate__animated animate__fadeInUp animate__slower space-y-4 sm:flex sm:space-y-0 sm:space-x-4"
+                >
+                  <button
+                    class="flex-none rounded-sm bg-indigo-500 px-8 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                  >
+                    View Courses
+                  </button>
+                </div>
+              </div>
+              <div
+                class="hidden lg:mt-0 lg:flex justify-end animate__animated animate__fadeInRight animate__slow"
+              >
+                <img
+                  class="h-fit w-full"
+                  src="./assets/banner_image.png"
+                  alt="hero image"
+                />
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
     </header>
     <!-- ================= main body section ============================ -->
     <main></main>
