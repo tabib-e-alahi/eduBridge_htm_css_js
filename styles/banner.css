@@ -1,18 +1,18 @@
 .line_class {
-  line-height: normal;
+  line-height: 58px;
 }
 
 .gradient-background {
   background: url("../assets/banner_img.png"),
     linear-gradient(316deg, #dfe3fb, #ece4fb, #8061ec);
-  background-size: 110% 110%, cover; 
+  background-size: 110% 110%, cover;
   background-position: 0% 50%, center;
   animation: gradient-animation 24s ease infinite;
 }
 
 @keyframes gradient-animation {
   0% {
-    background-position: 0% 50%, center; 
+    background-position: 0% 50%, center;
   }
   50% {
     background-position: 100% 50%, center;
@@ -21,3 +21,5 @@
     background-position: 0% 50%, center;
   }
 }
+
+
